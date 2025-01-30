@@ -1,0 +1,245 @@
+/* تنظیمات کلی */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* رنگ پس‌زمینه جدید */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* هدر */
+header {
+    background-color: #2c3e50; /* رنگ هدر جدید */
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ecf0f1; /* رنگ متن لوگو */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #ecf0f1; /* رنگ متن منو */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #3498db; /* رنگ متن منو هنگام هاور */
+}
+
+/* بخش اصلی (Hero) */
+.hero {
+    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #2c3e50; /* رنگ متن جدید */
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #34495e; /* رنگ متن جدید */
+}
+
+.hero .btn {
+    background-color: #3498db; /* رنگ دکمه جدید */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #2980b9; /* رنگ دکمه هنگام هاور */
+}
+
+/* درباره ما */
+.about {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff; /* پس‌زمینه سفید */
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50; /* رنگ متن جدید */
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #34495e; /* رنگ متن جدید */
+}
+
+/* خدمات */
+.services {
+    padding: 50px 0;
+    background-color: #ecf0f1; /* رنگ پس‌زمینه جدید */
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2c3e50; /* رنگ متن جدید */
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* افکت هنگام هاور */
+}
+
+.service-item i {
+    font-size: 40px;
+    color: #3498db; /* رنگ آیکون جدید */
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50; /* رنگ متن جدید */
+}
+
+.service-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #34495e; /* رنگ متن جدید */
+}
+
+/* تماس با ما */
+.contact {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff; /* پس‌زمینه سفید */
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50; /* رنگ متن جدید */
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #34495e; /* رنگ متن جدید */
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7; /* رنگ حاشیه جدید */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    background-color: #3498db; /* رنگ دکمه جدید */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #2980b9; /* رنگ دکمه هنگام هاور */
+}
+
+/* فوتر */
+footer {
+    background-color: #2c3e50; /* رنگ فوتر جدید */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #3498db; /* رنگ آیکون‌ها هنگام هاور */
+}
